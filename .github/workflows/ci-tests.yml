@@ -1,0 +1,28 @@
+name: "Unrolled Linked List Tests"
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+
+  ci:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create CMake cache
+        run: cmake -S . -B cmake-build-debug
+
+      - name: Build target
+        run: cmake --build cmake-build-debug --target unrolled-list-lib-tests
+        
+      - name: Run tests
+        working-directory: cmake-build-debug
+        run: ctest
