@@ -1,6 +1,6 @@
 # Unrolled Linked List
 
-![C++ Standard](https://img.shields.io/badge/C%2B%2B-20%2F23-blue.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![C++ Standard](https://img.shields.io/badge/C%2B%2B-20%2F23-blue.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![Tests](https://github.com/VladimirHeizenberg/unrolled-linked-list/actions/workflows/ci-tests.yml/badge.svg)
 
 A high-performance, cache-friendly and STL-compatible container for C++.
 

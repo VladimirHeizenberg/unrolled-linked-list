@@ -1,4 +1,4 @@
-name: "Unrolled Linked List Tests"
+name: "Tests"
 
 on:
   push:
